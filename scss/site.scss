@@ -1,0 +1,181 @@
+// topImport
+
+// endtopImport
+
+// bower:scss
+@import "../bower_components/colonial-branding/scss/branding-cla.scss";
+// endbower
+
+// import
+@import "scss/_color-vars";
+// endimport
+
+* {
+  transition: all .3s ease-in-out;
+}
+
+html { 
+  background: url(../img/bg-body.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  background: none;
+  font-family: 'Source Sans Pro';
+  font-size: 16px;
+  color: $white;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: 360px) and (max-width: 430px) {
+    width: 320px;
+  }
+  @media (min-width: 431px) and (max-width: 500px) {
+    width: 370px;
+  }
+  @media (min-width: 501px) {
+    width: 400px;
+  }
+}
+
+.logo {  
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background: url(../img/logo-one-color.svg) no-repeat;
+  width: 232px;
+  height: 58px;
+  margin: 15px auto 30px auto ;
+}
+
+a {
+  color: $asparagus;
+  text-decoration: underline;
+  &:hover {
+    color: $white;
+  }
+}
+
+header, footer {
+  padding: 0 10px;
+}
+
+header {
+  display: block;
+
+  p {
+    
+  }
+
+  a {
+    display: inline-block;
+    width: 55%;
+    margin: 0;
+    text-align: right;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    line-height: 30px;
+  }
+
+  h2 {
+    color: $white;
+    font-family: 'Oswald Light';
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;
+    margin-right: -0.32em; // whitespace fix for disp:inline-block extra whitespace bug
+    padding: 0;
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+  }
+}
+
+.register {
+  vertical-align: middle;
+}
+
+
+
+form {
+  
+  width: 100%;
+  background: $snow;
+  padding: 15px 10px;
+  margin: 15px 0;
+}
+
+input {
+  font-family: 'Source Sans Pro';
+  font-size: 18px;
+  color: $slate;
+  background: $white;
+  border: 1px solid $tin;
+  padding: 13px 14px;
+  z-index: 1;
+  &:focus {
+    border: 2px solid $leaf;
+    z-index: 10;
+    padding: 12px 13px;
+  }
+  &[type='email'] {
+    margin: 0;
+  }
+  &[type='password']{
+    margin-top: -2px;
+  }
+  &[type='email'],
+  &[type='password'] {
+    position: relative;
+    width: 100%;
+  }
+  &[type='checkbox'] {
+    float: left;
+    margin: 7px 10px 10px 10px;
+  }
+}
+
+label {
+  color: $slate;
+  font-weight: normal;
+}
+
+.check-wrap {
+  margin-top: 25px;
+}
+
+button {
+  width: 100%;
+  margin: 20px 0 !important; // .btn class has margin-bottom of 0
+}
+
+.forgot {
+  a {
+    color: $slate;
+    display: inline-block;
+    width: 50%;
+    &:first-child {
+      margin-right: -0.32em;
+    }
+  }
+  a:hover {
+    color: $charcoal;
+  }
+}
+
+a.forgot-right {
+  text-align: right;
+}
+
+
+footer {
+  padding: 20px;
+  color: $tin;
+  text-align: center;
+  .copy {
+    font-size: 12px;
+  }
+}

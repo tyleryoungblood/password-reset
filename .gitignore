@@ -1,0 +1,16 @@
+# Ignore everything
+#*
+
+# Ignore These Directories and Files
+bower_components
+node_modules
+
+# But not these files...
+!.gitignore
+!index.html
+!scss/*.scss
+!js/*.js
+# etc...
+
+# ...even if they are in subdirectories
+#!*/
