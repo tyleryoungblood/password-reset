@@ -47,7 +47,13 @@ body {
   background: url(../img/logo-one-color.svg) no-repeat;
   width: 232px;
   height: 58px;
-  margin: 15px auto 30px auto ;
+  margin: 15px auto 20px;
+  @media (min-width: 431px) and (max-width: 500px) {
+    margin: 30px auto 25px;
+  }
+  @media (min-width: 501px) {
+    margin: 40px auto 35px;
+  }
 }
 
 a {
@@ -60,6 +66,9 @@ a {
 
 header, footer {
   padding: 0 10px;
+  @media (min-width: 431px) {
+    padding: 0 20px;
+  }
 }
 
 header {
@@ -90,6 +99,9 @@ header {
     display: inline-block;
     width: 45%;
     vertical-align: middle;
+    @media (max-width: 360px) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -104,7 +116,10 @@ form {
   width: 100%;
   background: $snow;
   padding: 15px 10px;
-  margin: 15px 0;
+  margin: 15px 0 0;
+  @media (min-width: 431px) {
+    padding: 20px 20px 30px;  // T, RL, B
+  }
 }
 
 input {
@@ -133,31 +148,35 @@ input {
   }
   &[type='checkbox'] {
     float: left;
-    margin: 7px 10px 10px 10px;
+    margin: 7px 10px 0;
   }
 }
 
 label {
   color: $slate;
   font-weight: normal;
+  margin-bottom: 0;
 }
 
 .check-wrap {
-  margin-top: 25px;
+  padding: 0;
+  margin-top: 3px;
   display: inline-block;
   width: 100%;
   @media (min-width: 431px) {
     width: 50%;
     float: left;
+    margin-top: 16px;
   }
 }
 
-button {
+.btn {
   width: 100%;
-  margin: 20px 0 !important; // .btn class has margin-bottom of 0
+  margin: 20px 0 17px; // .btn class has margin-bottom of 0
   display: inline-block;
   @media (min-width: 431px) {
     width: 50%;
+    margin: 10px 0 13px;
   }
 }
 
@@ -166,6 +185,10 @@ button {
     color: $slate;
     display: inline-block;
     width: 50%;
+    margin-bottom: 8px;
+    @media (min-width: 431px) {
+      margin-bottom: 0;
+    }
     &:first-child {
       margin-right: -0.32em;
     }
@@ -181,10 +204,21 @@ a.forgot-right {
 
 
 footer {
-  padding: 20px;
+  padding: 15px 20px 20px;
   color: $tin;
   text-align: center;
+  @media (min-width: 501px ) {
+    padding-top: 25px;
+  }
+
   .copy {
     font-size: 12px;
+    margin-top: 30px;
+    @media (min-width: 431px) {
+      position: absolute;
+      bottom: 5px;
+      left: 20px;
+      text-align: left;
+    }
   }
 }

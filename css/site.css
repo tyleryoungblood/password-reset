@@ -5418,7 +5418,13 @@ body {
   background: url(../img/logo-one-color.svg) no-repeat;
   width: 232px;
   height: 58px;
-  margin: 15px auto 30px auto; }
+  margin: 15px auto 20px; }
+  @media (min-width: 431px) and (max-width: 500px) {
+    .logo {
+      margin: 30px auto 25px; } }
+  @media (min-width: 501px) {
+    .logo {
+      margin: 40px auto 35px; } }
 
 a {
   color: #a4cc44;
@@ -5428,6 +5434,9 @@ a {
 
 header, footer {
   padding: 0 10px; }
+  @media (min-width: 431px) {
+    header, footer {
+      padding: 0 20px; } }
 
 header {
   display: block; }
@@ -5450,6 +5459,9 @@ header {
     display: inline-block;
     width: 45%;
     vertical-align: middle; }
+    @media (max-width: 360px) {
+      header h2 {
+        font-size: 20px; } }
 
 .register {
   vertical-align: middle; }
@@ -5458,7 +5470,10 @@ form {
   width: 100%;
   background: #f6f9fc;
   padding: 15px 10px;
-  margin: 15px 0; }
+  margin: 15px 0 0; }
+  @media (min-width: 431px) {
+    form {
+      padding: 20px 20px 30px; } }
 
 input {
   font-family: 'Source Sans Pro';
@@ -5481,33 +5496,41 @@ input {
     width: 100%; }
   input[type='checkbox'] {
     float: left;
-    margin: 7px 10px 10px 10px; }
+    margin: 7px 10px 0; }
 
 label {
   color: #5b7183;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-bottom: 0; }
 
 .check-wrap {
-  margin-top: 25px;
+  padding: 0;
+  margin-top: 3px;
   display: inline-block;
   width: 100%; }
   @media (min-width: 431px) {
     .check-wrap {
       width: 50%;
-      float: left; } }
+      float: left;
+      margin-top: 16px; } }
 
-button {
+.btn {
   width: 100%;
-  margin: 20px 0 !important;
+  margin: 20px 0 17px;
   display: inline-block; }
   @media (min-width: 431px) {
-    button {
-      width: 50%; } }
+    .btn {
+      width: 50%;
+      margin: 10px 0 13px; } }
 
 .forgot a {
   color: #5b7183;
   display: inline-block;
-  width: 50%; }
+  width: 50%;
+  margin-bottom: 8px; }
+  @media (min-width: 431px) {
+    .forgot a {
+      margin-bottom: 0; } }
   .forgot a:first-child {
     margin-right: -0.32em; }
 .forgot a:hover {
@@ -5517,8 +5540,18 @@ a.forgot-right {
   text-align: right; }
 
 footer {
-  padding: 20px;
+  padding: 15px 20px 20px;
   color: #afc5d3;
   text-align: center; }
+  @media (min-width: 501px) {
+    footer {
+      padding-top: 25px; } }
   footer .copy {
-    font-size: 12px; }
+    font-size: 12px;
+    margin-top: 30px; }
+    @media (min-width: 431px) {
+      footer .copy {
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+        text-align: left; } }
