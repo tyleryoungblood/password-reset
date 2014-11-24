@@ -5504,6 +5504,7 @@ input {
 label {
   color: #5b7183;
   font-weight: normal;
+  margin-top: 7px;
   margin-bottom: 0;
   padding-left: 25px;
   cursor: pointer; }
@@ -5547,11 +5548,12 @@ input[type=checkbox] {
 
 .btn {
   width: 100%;
+  height: 50px;
   margin: 20px 0 17px;
   display: inline-block; }
   @media (min-width: 431px) {
     .btn {
-      width: 50%;
+      width: 140px;
       margin: 10px 0 13px; } }
 
 .btn-leaf {
@@ -5567,18 +5569,20 @@ input[type=checkbox] {
   .btn-leaf:focus {
     outline-style: none !important; }
 
-.forgot a {
-  color: #5b7183;
-  display: inline-block;
-  width: 50%;
-  margin-bottom: 8px; }
-  @media (min-width: 431px) {
-    .forgot a {
-      margin-bottom: 0; } }
-  .forgot a:first-child {
-    margin-right: -0.32em; }
-.forgot a:hover {
-  color: #1f3340; }
+.forgot {
+  clear: both; }
+  .forgot a {
+    color: #5b7183;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 8px; }
+    @media (min-width: 431px) {
+      .forgot a {
+        margin-bottom: 0; } }
+    .forgot a:first-child {
+      margin-right: -0.32em; }
+  .forgot a:hover {
+    color: #1f3340; }
 
 a.forgot-right {
   text-align: right; }
