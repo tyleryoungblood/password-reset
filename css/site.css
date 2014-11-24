@@ -5441,14 +5441,6 @@ header, footer {
 
 header {
   display: block; }
-  header a {
-    display: inline-block;
-    width: 50%;
-    margin: 0;
-    text-align: right;
-    vertical-align: middle;
-    margin-bottom: 2px;
-    line-height: 30px; }
   header h2 {
     color: #fff;
     font-family: 'Oswald Light';
@@ -5463,6 +5455,15 @@ header {
     @media (max-width: 360px) {
       header h2 {
         font-size: 20px; } }
+
+.register a {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  text-align: right;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  line-height: 30px; }
 
 .register {
   vertical-align: middle; }
