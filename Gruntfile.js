@@ -7,4 +7,7 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('uiFramework');
+  grunt.loadNpmTasks('grunt-html-include');
+
+  grunt.registerTask('html_include');
 }

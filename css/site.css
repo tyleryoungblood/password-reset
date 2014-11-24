@@ -5416,8 +5416,9 @@ body {
   text-shadow: none;
   color: transparent;
   background: url(../img/logo-one-color.svg) no-repeat;
-  width: 232px;
-  height: 58px;
+  background-size: auto 44px;
+  width: 176px;
+  height: 44px;
   margin: 15px auto 20px; }
   @media (min-width: 431px) and (max-width: 500px) {
     .logo {
@@ -5442,7 +5443,7 @@ header {
   display: block; }
   header a {
     display: inline-block;
-    width: 55%;
+    width: 50%;
     margin: 0;
     text-align: right;
     vertical-align: middle;
@@ -5457,7 +5458,7 @@ header {
     margin-right: -0.32em;
     padding: 0;
     display: inline-block;
-    width: 45%;
+    width: 50%;
     vertical-align: middle; }
     @media (max-width: 360px) {
       header h2 {
@@ -5474,6 +5475,12 @@ form {
   @media (min-width: 431px) {
     form {
       padding: 20px 20px 30px; } }
+  form p {
+    color: #5b7183; }
+  form a {
+    color: #5b7183; }
+  form a:hover {
+    color: #1f3340; }
 
 input {
   font-family: 'Source Sans Pro';
@@ -5491,11 +5498,11 @@ input {
     margin: 0; }
   input[type='password'] {
     margin-top: -2px; }
-  input[type='email'], input[type='password'] {
+  input[type='email'], input[type='password'], input[type='text'] {
     position: relative;
     width: 100%;
     height: 50px; }
-    input[type='email']:focus, input[type='password']:focus {
+    input[type='email']:focus, input[type='password']:focus, input[type='text']:focus {
       outline-style: none !important; }
   input[type='checkbox'] {
     float: left;
@@ -5547,6 +5554,7 @@ input[type=checkbox] {
       margin-top: 16px; } }
 
 .btn {
+  text-transform: uppercase;
   width: 100%;
   height: 50px;
   margin: 20px 0 17px;
@@ -5572,7 +5580,6 @@ input[type=checkbox] {
 .forgot {
   clear: both; }
   .forgot a {
-    color: #5b7183;
     display: inline-block;
     width: 50%;
     margin-bottom: 8px; }
@@ -5581,8 +5588,6 @@ input[type=checkbox] {
         margin-bottom: 0; } }
     .forgot a:first-child {
       margin-right: -0.32em; }
-  .forgot a:hover {
-    color: #1f3340; }
 
 a.forgot-right {
   text-align: right; }
