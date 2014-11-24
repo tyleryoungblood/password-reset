@@ -5493,7 +5493,10 @@ input {
     margin-top: -2px; }
   input[type='email'], input[type='password'] {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    height: 50px; }
+    input[type='email']:focus, input[type='password']:focus {
+      outline-style: none !important; }
   input[type='checkbox'] {
     float: left;
     margin: 7px 10px 0; }
@@ -5501,9 +5504,37 @@ input {
 label {
   color: #5b7183;
   font-weight: normal;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-left: 25px;
+  cursor: pointer; }
+
+label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 2px solid #afc5d3;
+  position: absolute;
+  bottom: 3px;
+  left: 0; }
+
+input[type=checkbox] {
+  display: none; }
+  input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    color: #fff;
+    background-color: #67a14c;
+    border: 2px solid #67a14c;
+    position: absolute;
+    line-height: 12px;
+    text-align: center; }
+
+.checkbox label:before {
+  border-radius: 3px; }
 
 .check-wrap {
+  position: relative;
   padding: 0;
   margin-top: 3px;
   display: inline-block;
@@ -5522,6 +5553,19 @@ label {
     .btn {
       width: 50%;
       margin: 10px 0 13px; } }
+
+.btn-leaf {
+  border: 1px solid #4f7c47;
+  border-bottom: 2px solid #4f7c47; }
+  .btn-leaf:hover {
+    background-color: #4f7c47;
+    border: 1px solid #3e6444;
+    border-bottom: 2px solid #3e6444; }
+  .btn-leaf:active {
+    color: #67a14c;
+    transition: color 0s; }
+  .btn-leaf:focus {
+    outline-style: none !important; }
 
 .forgot a {
   color: #5b7183;
