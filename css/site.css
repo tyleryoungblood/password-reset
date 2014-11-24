@@ -5387,15 +5387,15 @@ thead {
 * {
   transition: all 0.3s ease-in-out; }
 
-html {
-  background: url(../img/bg-body.jpg) no-repeat center center fixed;
-  background-size: cover; }
-
 body {
-  background: none;
+  background: #165580 url(../img/bg-body.jpg) no-repeat top left fixed;
+  background-size: auto 100%;
   font-family: 'Source Sans Pro';
   font-size: 16px;
   color: #fff; }
+  @media (min-width: 800px) {
+    body {
+      background-size: 100% auto; } }
 
 .wrapper {
   width: 100%;
@@ -5488,11 +5488,21 @@ label {
   font-weight: normal; }
 
 .check-wrap {
-  margin-top: 25px; }
+  margin-top: 25px;
+  display: inline-block;
+  width: 100%; }
+  @media (min-width: 431px) {
+    .check-wrap {
+      width: 50%;
+      float: left; } }
 
 button {
   width: 100%;
-  margin: 20px 0 !important; }
+  margin: 20px 0 !important;
+  display: inline-block; }
+  @media (min-width: 431px) {
+    button {
+      width: 50%; } }
 
 .forgot a {
   color: #5b7183;

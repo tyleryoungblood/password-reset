@@ -14,13 +14,12 @@
   transition: all .3s ease-in-out;
 }
 
-html { 
-  background: url(../img/bg-body.jpg) no-repeat center center fixed;
-  background-size: cover;
-}
-
 body {
-  background: none;
+  background: $cobalt url(../img/bg-body.jpg) no-repeat top left fixed;
+  background-size: auto 100%;
+  @media (min-width: 800px) {
+    background-size: 100% auto;
+  }
   font-family: 'Source Sans Pro';
   font-size: 16px;
   color: $white;
@@ -145,11 +144,21 @@ label {
 
 .check-wrap {
   margin-top: 25px;
+  display: inline-block;
+  width: 100%;
+  @media (min-width: 431px) {
+    width: 50%;
+    float: left;
+  }
 }
 
 button {
   width: 100%;
   margin: 20px 0 !important; // .btn class has margin-bottom of 0
+  display: inline-block;
+  @media (min-width: 431px) {
+    width: 50%;
+  }
 }
 
 .forgot {
