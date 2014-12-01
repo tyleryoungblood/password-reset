@@ -1,0 +1,63 @@
+$user-empty: 0; // first sprite
+$user: 1; // second sprite ...
+$lock-empty: 2;
+$lock: 3;
+$email-empty: 4;
+$email: 5;
+$answer-empty: 6;
+$answer: 7;
+$key-empty: 8;
+$key: 9;
+
+.spritesheet {
+  background: transparent url('../img/spritesheet-login.svg') no-repeat;
+  padding-left: 40px;
+}
+
+@mixin sprite($number) {
+  background-position: 12px (($number * -50 + 16) + px);
+  // calculate the x offset according to the sprite number. If it's the first sprite, use 0
+}
+
+
+.login .spritesheet {
+  @include sprite($user);
+}
+
+.login .spritesheet.empty {
+  @include sprite($user-empty);
+}
+
+.password .spritesheet {
+  @include sprite($lock);
+}
+
+.password .spritesheet.empty {
+  @include sprite($lock-empty);
+}
+
+.email .spritesheet {
+  @include sprite($email);
+}
+
+.email .spritesheet.empty {
+  @include sprite($email-empty);
+}
+
+.answer .spritesheet {
+  @include sprite($answer);
+}
+
+.answer .spritesheet.empty {
+  @include sprite($answer-empty);
+}
+
+.new-password .spritesheet,
+.confirm-password .spritesheet {
+  @include sprite($key);
+}
+
+.new-password .spritesheet.empty, 
+.confirm-password .spritesheet.empty {
+  @include sprite($key-empty);
+}

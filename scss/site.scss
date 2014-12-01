@@ -8,6 +8,7 @@
 
 // import
 @import "scss/_color-vars";
+@import "scss/_spritesheet";
 // endimport
 
 body {
@@ -105,7 +106,7 @@ header {
 
 
 form {
-  
+  position: relative;
   width: 100%;
   background: $snow;
   padding: 15px 10px;
@@ -130,10 +131,27 @@ form {
   transition: opacity 1s ease-in;
 }
 
-form.navigating {
-  opacity: 0;
-  transition: opacity 1s ease-out;
+// form.navigating {
+//   opacity: 0;
+//   transition: opacity 1s ease-out;
+// }
+.login,
+.password,
+.new-password,
+.confirm-password,
+.email,
+.answer {
+  width: 100%;
 }
+
+
+
+
+// .icon-login {
+//   background: white url(../img/spritesheet-login.svg) no-repeat 0 0;
+//   border-right: none;
+//   height: 30px;
+// }
 
 input {
   font-family: 'Source Sans Pro';
@@ -145,19 +163,18 @@ input {
   z-index: 1;
 
   &:focus {
-    border: 2px solid $leaf;
-    z-index: 10;
-    padding: 12px 13px;
+    border: 1px solid $leaf;
+    z-index: 5;
   }
-  &[id='login'].no-margin {
+  &#login.no-margin {
     margin: 0;
   }
 
   &[type='password'].no-margin{
-    margin-top: -2px;
+    margin-top: -1px;
   }
 
-  &[id='login'],
+  &#login,
   &[type='email'],
   &[type='password'],
   &[type='text'] {
@@ -200,6 +217,10 @@ label:before {
   position: absolute;
   bottom: 3px;
   left: 0;
+}
+
+#login, .new-password {
+  margin-bottom: 10px;
 }
 
 input[type=checkbox] {

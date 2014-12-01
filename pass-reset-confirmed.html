@@ -30,9 +30,16 @@
 
                   <p>Your Password was reset successfully! </p>
 
-                   <label for="login" class="sr-only">Email</label><input type="text" name="login" id="login" placeholder="Login ID" class="no-margin">
+                   <div class="input-group login">
+                     <label for="login" class="sr-only">Login ID</label>
+                     <input type="text" name="login" id="login" placeholder="Login ID" class="no-margin spritesheet empty">
+                   </div>
 
-                   <label for="password" class="sr-only">Password</label><input type="password" name="password" id="password" placeholder="Password" class="no-margin">
+
+                   <div class="input-group password">
+                     <label for="password" class="sr-only">Password</label>
+                     <input type="password" name="password" id="password" placeholder="Password" class="no-margin spritesheet empty">
+                   </div>
 
 
                 <div class="check-wrap">
@@ -67,6 +74,7 @@
 <!-- begin:js --><script src="//localhost:35729/livereload.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script><!-- end:js -->
    <script src="js/footer.js"></script>
+   <script src="js/spritesheet.js"></script>
 
     </body>
 </html>

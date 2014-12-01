@@ -30,9 +30,14 @@
 
                   <p>Please enter your new password.</p>
 
-                  <label for="password" class="sr-only">New Password</label><input type="password" name="password" id="password" placeholder="New Password">
-
-                  <label for="confirm-pass" class="sr-only">Confirm Password</label><input type="password" name="confirm-pass" id="confirm-pass" placeholder="Confirm Password">
+                  <div class="input-group new-password">
+                    <label for="password" class="sr-only">New Password</label><input type="password" name="password" id="password" placeholder="New Password" class="spritesheet empty">
+                  </div>
+                  
+                  <div class="input-group confirm-password">
+                    <label for="confirm-pass" class="sr-only">Confirm Password</label><input type="password" name="confirm-pass" id="confirm-pass" placeholder="Confirm Password" class="spritesheet empty">
+                  </div>
+                  
                 
                 <button class="btn btn-leaf pull-right">Submit</button><div class="clearfix"></div>
 
@@ -55,6 +60,7 @@
 <!-- begin:js --><script src="//localhost:35729/livereload.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script><!-- end:js -->
    <script src="js/footer.js"></script>
+   <script src="js/spritesheet.js"></script>
 
     </body>
 </html>
