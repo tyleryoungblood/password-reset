@@ -10,10 +10,6 @@
 @import "scss/_color-vars";
 // endimport
 
-* {
-  transition: all .3s ease-in-out;
-}
-
 body {
   background: $cobalt url(../img/bg-body.jpg) no-repeat top left fixed;
   background-size: auto 100%;
@@ -78,28 +74,26 @@ header {
   h2 {
     color: $white;
     font-family: 'Oswald Light';
-    font-size: 24px;
+    font-size: 22px;
     line-height: 30px;
     margin: 0;
-    margin-right: -0.32em; // whitespace fix for disp:inline-block extra whitespace bug
+    margin-right: -.32em; // whitespace fix for disp:inline-block extra whitespace bug
     padding: 0;
     display: inline-block;
-    width: 50%;
+    width: 75%;
     vertical-align: middle;
-    @media (max-width: 360px) {
-      font-size: 20px;
-    }
+
   }
 }
 
 .register a {
-    display: inline-block;
-    width: 50%;
-    margin: 0;
-    text-align: right;
-    vertical-align: middle;
-    margin-bottom: 2px;
-    line-height: 30px;
+  display: inline-block;
+  width: 25%;
+  margin: 0;
+  text-align: right;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  line-height: 30px;
 }
 
 
@@ -115,10 +109,11 @@ form {
   width: 100%;
   background: $snow;
   padding: 15px 10px;
-  margin: 15px 0 0;
+  margin: 8px 0 0;
   @media (min-width: 431px) {
     padding: 20px 20px 30px;  // T, RL, B
   }
+
   p {
     color: $slate;
   }
@@ -126,9 +121,18 @@ form {
   a {
     color: $slate;
   }
+
   a:hover {
     color: $charcoal;
   }
+
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+form.navigating {
+  opacity: 0;
+  transition: opacity 1s ease-out;
 }
 
 input {
@@ -139,27 +143,34 @@ input {
   border: 1px solid $tin;
   padding: 13px 14px;
   z-index: 1;
+
   &:focus {
     border: 2px solid $leaf;
     z-index: 10;
     padding: 12px 13px;
   }
-  &[type='email'] {
+  &[id='login'].no-margin {
     margin: 0;
   }
-  &[type='password']{
+
+  &[type='password'].no-margin{
     margin-top: -2px;
   }
+
+  &[id='login'],
   &[type='email'],
   &[type='password'],
   &[type='text'] {
     position: relative;
-    width: 100%;
     height: 50px;
+    width: 100%;
+
     &:focus { 
       outline-style: none !important;
     }
+
   }
+
   &[type='checkbox'] {
     float: left;
     margin: 7px 10px 0;
@@ -193,6 +204,7 @@ label:before {
 
 input[type=checkbox] {
   display: none; //hide checkbox so we can display a custom styled one instead
+  
   &:checked + label:before {
     content: "\2713";
     color: #fff;
@@ -208,14 +220,13 @@ input[type=checkbox] {
   border-radius: 3px;
 }
 
-
-
 .check-wrap {
   position: relative;
   padding: 0;
   margin-top: 3px;
   display: inline-block;
   width: 100%;
+
   @media (min-width: 431px) {
     width: 50%;
     float: left;
@@ -229,6 +240,7 @@ input[type=checkbox] {
   height: 50px;
   margin: 20px 0 17px; // .btn class has margin-bottom of 0
   display: inline-block;
+
   @media (min-width: 431px) {
     width: 140px;
     margin: 10px 0 13px;
@@ -238,15 +250,18 @@ input[type=checkbox] {
 .btn-leaf {
   border: 1px solid $grass;
   border-bottom: 2px solid $grass;
+
   &:hover {
     background-color: $grass;
     border: 1px solid $forest;
     border-bottom: 2px solid $forest;
   }
+
   &:active {
     color: $leaf;
     transition: color 0s;
   }
+
   &:focus {
     outline-style: none !important;
   }
@@ -254,6 +269,7 @@ input[type=checkbox] {
 
 .forgot {
   clear: both;
+
   a {
     display: inline-block;
     width: 50%;
@@ -261,8 +277,9 @@ input[type=checkbox] {
     @media (min-width: 431px) {
       margin-bottom: 0;
     }
+
     &:first-child {
-      margin-right: -0.32em;
+      margin-right: -.32em;
     }
   }
 }
@@ -276,6 +293,7 @@ footer {
   padding: 15px 20px 20px;
   color: $tin;
   text-align: center;
+
   @media (min-width: 501px ) {
     padding-top: 25px;
   }
@@ -283,11 +301,19 @@ footer {
   .copy {
     font-size: 12px;
     margin-top: 30px;
+
     @media (min-width: 431px) {
       position: absolute;
       bottom: 5px;
+
       left: 20px;
       text-align: left;
+      @media (max-height: 600px) { //prevent copy msg from overlapping content on short screens
+        top: 517px;
+        bottom: auto;
+      }
     }
+
+
   }
 }
