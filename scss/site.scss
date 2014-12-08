@@ -8,6 +8,7 @@
 
 // import
 @import "scss/_color-vars";
+@import "scss/_input-group-addon-inset";
 @import "scss/_spritesheet";
 // endimport
 
@@ -109,8 +110,15 @@ form {
   position: relative;
   width: 100%;
   background: $snow;
+
   padding: 15px 10px;
   margin: 8px 0 0;
+
+  @media (min-width: 360px) {
+    box-shadow: -1px 2px 0 rgba(31,51,64, .33); // $charcoal @ 33%
+    border-radius: 2px;
+  }
+
   @media (min-width: 431px) {
     padding: 20px 20px 30px;  // T, RL, B
   }
@@ -139,6 +147,8 @@ form {
 .password,
 .new-password,
 .confirm-password,
+.new-login,
+.confirm-new-login,
 .email,
 .answer {
   width: 100%;
@@ -212,14 +222,16 @@ label:before {
   height: 16px;
 
   background-color: #fff;
-  border: 2px solid $tin;
+  border: 1px solid $tin;
 
   position: absolute;
   bottom: 3px;
   left: 0;
 }
 
-#login, .new-password {
+#login, 
+.new-password,
+.new-login {
   margin-bottom: 10px;
 }
 

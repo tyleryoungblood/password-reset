@@ -20,11 +20,15 @@ $key: 9;
 }
 
 
-.login .spritesheet {
+.login .spritesheet,
+.new-login .spritesheet,
+.confirm-new-login .spritesheet {
   @include sprite($user);
 }
 
-.login .spritesheet.empty {
+.login .spritesheet.empty,
+.new-login .spritesheet.empty,
+.confirm-new-login .spritesheet.empty {
   @include sprite($user-empty);
 }
 

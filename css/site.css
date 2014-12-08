@@ -5384,14 +5384,29 @@ thead {
 /***************************
   NEW COLOR VARIABLES
 ***************************/
+.input-group-addon-inset + input {
+  padding-left: 40px; }
+
+.input-group-addon.input-group-addon-inset {
+  cursor: text;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  z-index: 10;
+  height: 30px;
+  width: 30px; }
+
 .spritesheet {
   background: transparent url('../img/spritesheet-login.svg') no-repeat;
   padding-left: 40px; }
 
-.login .spritesheet {
+.login .spritesheet, .new-login .spritesheet, .confirm-new-login .spritesheet {
   background-position: 12px -34px; }
 
-.login .spritesheet.empty {
+.login .spritesheet.empty, .new-login .spritesheet.empty, .confirm-new-login .spritesheet.empty {
   background-position: 12px 16px; }
 
 .password .spritesheet {
@@ -5504,6 +5519,10 @@ form {
   margin: 8px 0 0;
   opacity: 1;
   transition: opacity 1s ease-in; }
+  @media (min-width: 360px) {
+    form {
+      box-shadow: -1px 2px 0 rgba(31, 51, 64, 0.33);
+      border-radius: 2px; } }
   @media (min-width: 431px) {
     form {
       padding: 20px 20px 30px; } }
@@ -5514,7 +5533,7 @@ form {
   form a:hover {
     color: #1f3340; }
 
-.login, .password, .new-password, .confirm-password, .email, .answer {
+.login, .password, .new-password, .confirm-password, .new-login, .confirm-new-login, .email, .answer {
   width: 100%; }
 
 input {
@@ -5556,12 +5575,12 @@ label:before {
   width: 16px;
   height: 16px;
   background-color: #fff;
-  border: 2px solid #afc5d3;
+  border: 1px solid #afc5d3;
   position: absolute;
   bottom: 3px;
   left: 0; }
 
-#login, .new-password {
+#login, .new-password, .new-login {
   margin-bottom: 10px; }
 
 input[type=checkbox] {
