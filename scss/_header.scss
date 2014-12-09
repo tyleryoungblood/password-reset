@@ -1,0 +1,55 @@
+.logo {  
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background: url(../img/logo-one-color.svg) no-repeat;
+  background-size: auto 44px;
+  width: 176px;
+  height: 44px;
+  margin: 15px auto 20px;
+  @media (min-width: 431px) and (max-width: 500px) {
+    margin: 30px auto 25px;
+  }
+  @media (min-width: 501px) {
+    margin: 40px auto 35px;
+  }
+}
+
+header {
+  padding: 0 10px;
+  @media (min-width: 431px) {
+    padding: 0 20px;
+  }
+
+  display: block;
+
+  h2 {
+    color: $white;
+    font-family: 'Oswald Light';
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0;
+    margin-right: -.32em; // whitespace fix for disp:inline-block extra whitespace bug
+    padding: 0;
+    display: inline-block;
+    width: 75%;
+    vertical-align: middle;
+  }
+}
+
+.register a {
+  display: inline-block;
+  width: 25%;
+  margin: 0;
+  text-align: right;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  line-height: 30px;
+}
+
+
+
+.register {
+  vertical-align: middle;
+}

@@ -1,0 +1,28 @@
+footer {
+  padding: 15px 20px 20px;
+  color: $tin;
+  text-align: center;
+
+  @media (min-width: 501px ) {
+    padding-top: 25px;
+  }
+
+  .copy {
+    font-size: 12px;
+    margin-top: 30px;
+
+    @media (min-width: 431px) {
+      position: absolute;
+      bottom: 5px;
+
+      left: 20px;
+      text-align: left;
+      @media (max-height: 600px) { //prevent copy msg from overlapping content on short screens
+        top: 517px;
+        bottom: auto;
+      }
+    }
+
+
+  }
+}
