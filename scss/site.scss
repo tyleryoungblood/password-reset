@@ -1,5 +1,5 @@
 // topImport
-
+@import "scss/__color-vars";
 // endtopImport
 
 // bower:scss
@@ -7,9 +7,6 @@
 // endbower
 
 // import
-//color variables listed first
-@import "scss/_color-vars";
-
 @import "scss/_body";
 @import "scss/_footer";
 @import "scss/_form";

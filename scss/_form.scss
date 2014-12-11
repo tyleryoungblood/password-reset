@@ -12,7 +12,7 @@ form {
   }
 
   @media (min-width: 431px) {
-    padding: 20px 20px 14px;  // T, RL, B
+    padding: 20px 20px 30px;  // T, RL, B
   }
 
   p {
@@ -176,28 +176,30 @@ input[type=checkbox] {
   }
 }
 
+
+
 .forgot {
   clear: both;
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 0;
 
   li {
-    display: inline;
+    display: inline-block;
     width: 50%;
+    &:first-child {
+      margin-right: -.32em;
+    }
+    &:last-child {
+      text-align: right;
+    }
   }
 
 
   a {
-    display: inline-block;
-    width: 50%;
-    margin-bottom: 8px;
-    @media (min-width: 431px) {
-      margin-bottom: 0;
-    }
+    display: inline;
 
-    &:first-child {
-      margin-right: -.32em;
-    }
+    
   }
 }
 
