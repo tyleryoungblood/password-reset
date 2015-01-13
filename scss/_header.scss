@@ -36,6 +36,13 @@ header {
     width: 75%;
     vertical-align: middle;
   }
+  h2 + p {
+    margin-top: 15px; // space between p that directly follows an h2, as in verify-email.html
+  }
+}
+
+.alert .alert-warning .dark {
+  color: black !important;
 }
 
 .register a {

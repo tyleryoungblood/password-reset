@@ -10,7 +10,7 @@ $key-empty: 8;
 $key: 9;
 
 .spritesheet {
-  background: transparent url('../img/spritesheet-login.svg') no-repeat;
+  background: $white url('../img/spritesheet-login.svg') no-repeat;
   padding-left: 40px;
 }
 
