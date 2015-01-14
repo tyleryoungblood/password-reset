@@ -16,3 +16,24 @@
 .verified {
   color: $leaf;
 }
+
+// MVC Errors
+.validation-summary-errors {
+  ul, li {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul {
+    margin-bottom: 10px;
+  }
+
+  li {
+    list-style-type: none;
+    color: red;
+
+    &:before {
+      content: "Error: ";
+    }
+  }
+}
