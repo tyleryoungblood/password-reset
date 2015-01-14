@@ -4,10 +4,12 @@ $lock-empty: 2;
 $lock: 3;
 $email-empty: 4;
 $email: 5;
-$answer-empty: 6;
+$answer-empty: 6; //speech bubble
 $answer: 7;
 $key-empty: 8;
 $key: 9;
+$valid: 10; // green checkbox
+$alert: 11; // orange exclamation
 
 .spritesheet {
   background: $white url('../img/spritesheet-login.svg') no-repeat;
@@ -15,7 +17,7 @@ $key: 9;
 }
 
 @mixin sprite($number) {
-  background-position: 12px (($number * -50 + 16) + px);
+  background-position: 4px (($number * -50 + 8) + px);
   // calculate the x offset according to the sprite number. If it's the first sprite, use 0
 }
 
@@ -65,3 +67,22 @@ $key: 9;
 .confirm-password .spritesheet.empty {
   @include sprite($key-empty);
 }
+
+.valid {
+  background: transparent url('../img/spritesheet-login.svg') no-repeat;
+  background-position: 0 (($valid * -50 - 8) + px);
+  padding-left: 33px;
+  margin-left: -12px;
+  font-size: 19px;
+}
+
+.custom-icon-alert {
+  background: transparent url('../img/spritesheet-login.svg') no-repeat;
+  background-position: 4px (($alert * -50 - 8) + px);
+  font-size: 19px;
+}
+
+// @mixin sprite($number) {
+//   background-position: 4px (($number * -50 + 8) + px);
+//   // calculate the x offset according to the sprite number. If it's the first sprite, use 0
+// }
