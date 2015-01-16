@@ -1,0 +1,38 @@
+.wrapper.select-a-site {
+  width: 100%;
+}
+
+.all-sites {
+  @extend .row;
+  // margin: 15px 0 auto;
+}
+
+.all-sites {
+  text-align: center;
+}
+
+.page-title-wrap {
+  width: 320px;
+  margin: 0 auto;
+  h2 {
+    color: $white;
+    font-family: 'Oswald Light';
+    font-size: 22px;
+    text-align: left;
+    position: absolute;
+    top: -45px;
+  }
+
+}
+
+
+.site {
+  @extend .col-lg-4;
+  @extend .col-md-4;
+  @extend .col-sm-6;
+  @extend .col-xs-12;
+  img {
+    margin: 15px 0 8px 0;
+  }
+}
+
