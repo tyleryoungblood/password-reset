@@ -3,36 +3,40 @@
 }
 
 .all-sites {
-  @extend .row;
-  // margin: 15px 0 auto;
-}
-
-.all-sites {
   text-align: center;
+  position: relative;
+  width: 100%;
 }
 
 .page-title-wrap {
-  width: 320px;
-  margin: 0 auto;
   h2 {
     color: $white;
     font-family: 'Oswald Light';
     font-size: 22px;
     text-align: left;
     position: absolute;
-    top: -45px;
+    top: -55px;
   }
-
 }
-
 
 .site {
-  @extend .col-lg-4;
-  @extend .col-md-4;
-  @extend .col-sm-6;
-  @extend .col-xs-12;
+  width: 100%;
+  margin: 2%;
   img {
-    margin: 15px 0 8px 0;
+    width: 100%;
+  }
+  @media (min-width: 480px) {
+    width: 46%;
+    float: left;
+  }
+  @media (min-width: 768px) {
+    width: 31.25%;
+    margin: 1%;
+    float: left;
+  }
+  @media (min-width: 1280px) {
+    width: 23%;
+    margin: 1%;
+    float: left;
   }
 }
-
