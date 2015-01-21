@@ -5511,7 +5511,8 @@ select {
   color: #999; }
 
 select option {
-  color: #5b7183; }
+  color: #5b7183;
+  width: 100px; }
   select option:first-child {
     display: none; }
 

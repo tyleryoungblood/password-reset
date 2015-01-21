@@ -75,6 +75,7 @@ select {
 
 select option {
   color: $slate;
+  width: 100px;
   &:first-child {
     display: none; //removes the "Select a Question" from the list of clickable options
   }
