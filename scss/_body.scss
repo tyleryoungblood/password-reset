@@ -1,3 +1,9 @@
+html {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background: $cobalt url(../img/bg-body.jpg) no-repeat top left fixed;
   background-size: auto 100%;
@@ -7,6 +13,9 @@ body {
   font-family: 'Source Sans Pro';
   font-size: 16px;
   color: $white;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 40px;
 }
 
 .wrapper {
