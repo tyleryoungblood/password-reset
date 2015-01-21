@@ -14,21 +14,10 @@ footer {
 
     @media (min-width: 431px) {
       position: absolute;
-      bottom: 0px;
+      bottom: 5px;
 
       left: 20px;
       text-align: left;
-
-      // @media (max-height: 600px) { //prevent copy msg from overlapping content on short screens
-      //   top: 517px;
-      //   bottom: 0;
-      // }
-
-      // @media (max-height: 880px) { //prevent copy msg from overlapping content on long screens
-      //   top: 970px;
-      //   bottom: 0;
-
-      // }
     }
 
 
