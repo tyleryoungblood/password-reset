@@ -5461,17 +5461,6 @@ thead {
 .verified {
   color: #67a14c; }
 
-.validation-summary-errors ul, .validation-summary-errors li {
-  padding: 0;
-  margin: 0; }
-.validation-summary-errors ul {
-  margin-bottom: 10px; }
-.validation-summary-errors li {
-  list-style-type: none;
-  color: red; }
-  .validation-summary-errors li:before {
-    content: "Error: "; }
-
 html {
   position: relative;
   height: 100%;
