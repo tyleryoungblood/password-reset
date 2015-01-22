@@ -69,17 +69,22 @@ input, select {
   width: 100%;
 }
 
-select {
-  color: #999; // makes the "Select a Question" the same color as placeholder text
-}
+// select {
+//   color: #999; // makes the "Select a Question" the same color as placeholder text
+// }
 
-select option {
-  color: $slate;
+// select option {
+//   color: $slate;
 
-  &:first-child {
-    display: none; //removes the "Select a Question" from the list of clickable options
-  }
-}
+//   &:first-child {
+//     display: none; //removes the "Select a Question" from the list of clickable options
+//   }
+
+//   //styles odd security questions to have a varied bkgrd color.  
+//   &:nth-of-type(2n+3) {
+//     background: $tin;
+//   }
+// }
 
 input {
   padding: 13px 14px;

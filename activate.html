@@ -9,7 +9,9 @@
 
 
         <!-- begin:css --><link rel="stylesheet" type="text/css" href="css/site.css"><!-- end:css -->
+        <!-- begin:css --><link rel="stylesheet" type="text/css" href="css/site.css"><!-- end:css -->
         <script src="js/modernizr/modernizr.2.7.1.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -43,10 +45,12 @@
                   </div>
                   
                   <h2>Security Question</h2>
-                  <select name="" id="">
-                    <option value="" diabled selected>Select a Question</option>
+                  <select name="" id="" class="chosen-single">
+                  <option></option>
                     <option value="">Question 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. </option>
                     <option value="">Question 2</option>
+                    <option value="">Question 3 Lorem ipsum. </option>
+                    <option value="">Question 4</option>
                   </select>
 
                   <div class="input-group answer">
@@ -78,8 +82,10 @@
         
 <!-- begin:js --><script src="//localhost:35729/livereload.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script><!-- end:js -->
+<script src="bower_components/chosen/chosen.jquery.min.js"></script><!-- end:js -->
    <script src="js/footer.js"></script>
    <script src="js/spritesheet.js"></script>
+   <script src="js/chosen.js"></script>
 
     </body>
 </html>
