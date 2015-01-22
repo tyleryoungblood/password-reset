@@ -8,9 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 
 
-        <!-- begin:css --><link rel="stylesheet" type="text/css" href="css/site.css"><!-- end:css -->
-        <!-- begin:css --><link rel="stylesheet" type="text/css" href="css/site.css"><!-- end:css -->
+        <!-- begin:css -->
+        <link rel="stylesheet" type="text/css" href="css/site.css">
+        <link rel="stylesheet" type="text/css" href="css/chosen.css">
+        <!-- end:css -->
         <script src="js/modernizr/modernizr.2.7.1.min.js"></script>
+
 
     </head>
     <body>
@@ -32,7 +35,6 @@
 
                   <p>Please complete your Profile. Login ID must be between 4 and 255 characters. Password must be 8 to 12 characters long.</p>
 
-
                   <div class="input-group login">
                     <label for="new-login" class="sr-only">Login ID</label><input type="text" name="login" id="login" placeholder="Login ID" class="spritesheet empty">
                   </div>
@@ -47,6 +49,7 @@
                   
                   <h2>Security Question</h2>
                   <select name="" id="" class="chosen-single">
+                    <option>Select a question</option>
                     <option value="">Question 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. </option>
                     <option value="">Question 2</option>
                     <option value="">Question 3 Lorem ipsum. </option>
@@ -63,10 +66,7 @@
                   
                 
                 <button class="btn btn-leaf pull-right">Submit</button><div class="clearfix"></div>
-
-                
-                
-
+            
             </form>
 
             <footer>
@@ -78,11 +78,12 @@
         </div> <!-- wrapper -->
 
 
+<!-- begin:js -->
+   <script src="//localhost:35729/livereload.js"></script>
+   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+   <script src="js/chosen.jquery.js"></script>
 
-        
-<!-- begin:js --><script src="//localhost:35729/livereload.js"></script>
-<script src="bower_components/jquery/dist/jquery.min.js"></script><!-- end:js -->
-<script src="bower_components/chosen/chosen.jquery.js"></script><!-- end:js -->
+<!-- end:js -->
    <script src="js/footer.js"></script>
    <script src="js/spritesheet.js"></script>
    <script src="js/chosen.js"></script>
